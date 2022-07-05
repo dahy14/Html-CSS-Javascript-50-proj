@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+  font-style: italic;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #b3edfb;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #0000004d;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-inline: 20px;
+  margin-block: 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 62.5px;
+  box-shadow: 3px 4px 8px 0 #0000004d;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#suisei {
+  background-image: url(pics/suisei.png);
+  background-repeat: none;
+}
+#pekora {
+  background-image: url(pics/pekora.png);
+}
+#ina {
+  background-image: url(pics/ina.png);
+}
+#aqua {
+  background-image: url(pics/aqua.png);
+}
+#fauna {
+  background-image: url(pics/fauna.png);
+}
+#watame {
+  background-image: url(pics/watame.png);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:focus {
+  outline: none;
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .body {
+    height: auto;
+    overflow-y: scroll;
+  }
+  #buttons {
+    transform: translateY(15%);
+  }
+  .btn {
+    display: block;
+  }
+}
