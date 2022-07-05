@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Helvetica", sans-serif;
 
   height: 100vh;
   display: flex;
@@ -13,4 +13,40 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
+
+  background-color: #0c0c0c;
+  color: #fafafa;
+}
+
+.container {
+  /* border: 1px solid #fcf; */
+  padding: 2rem;
+  text-align: center;
+}
+
+#textarea {
+  border: none;
+  display: block;
+  height: 100px;
+  width: 100%;
+  font-family: inherit;
+  padding: 1rem;
+  margin: 0.76rem;
+  margin-bottom: 2rem;
+}
+
+#textarea:focus {
+  outline: none;
+}
+
+.tag {
+  background-color: rgba(234, 234, 234, 0.275);
+  border-radius: 50px;
+  padding: 0.625rem;
+  margin: 0 0.768rem;
+  opacity: 0.5;
+}
+
+.tag.highlight {
+  opacity: 1;
 }
