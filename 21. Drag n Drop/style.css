@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+  background-color: paleturquoise;
+}
+
+.empty {
+  height: 500px;
+  width: 500px;
+  margin: 10px;
+  border: 3px solid black;
+  background: teal;
+}
+
+.fill {
+  background-image: url(https://pbs.twimg.com/media/FYLf6o6UsAAanfs?format=jpg&name=large);
+  background-position: center;
+  background-size: cover;
+
+  height: 495px;
+  width: 495px;
+}
+
+.hold {
+  border: 5px solid #ccc;
+}
+
+.hovered {
+  background-color: #333;
+  border-color: white;
+  border-style: dashed;
+}
+
+@media (max-wdith: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
