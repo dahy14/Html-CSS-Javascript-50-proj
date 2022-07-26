@@ -39,6 +39,10 @@ body {
   border-style: dashed;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 @media (max-wdith: 800px) {
   body {
     flex-direction: column;
