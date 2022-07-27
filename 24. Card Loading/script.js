@@ -8,10 +8,10 @@ const date = document.getElementById("date");
 const card = [header, title, excerpt, profileImg, userName, date];
 const data = [
   `<img src="header_bg.jpg" />`,
-  `Chill Ina`,
+  `Chill`,
   `Nice cozy day to lie down to a huge capy!`,
   `<img src="profile_1.jpg" alt="" />`,
-  `Sleepy Tako`,
+  `Sleepy Friend`,
   `July 27, 2022`,
 ];
 
