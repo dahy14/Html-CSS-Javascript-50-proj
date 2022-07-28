@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* 
+Color Scheme
+
+violet #8A4F7D
+orange1 #EF8275
+LighterOrange #FFC145
+bLOODrED #710000
+Bluish #568EA3
+
+*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 50px;
+}
+
+h1,
+h2,
+h3 {
+  color: #8a4f7d;
+}
+
+p {
+  color: #ef8275;
+}
+
+.container {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.nav {
+  position: fixed;
+  background-color: #4f2e48;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: #ffc145;
+  text-decoration: none;
+  padding: 7px 15px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #ef8275;
+  font-weight: bold;
+}
+
+.nav.active {
+  background-color: #ffc145;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+  color: #4f2e48;
+}
+
+.nav.active .container {
+  padding: 5px 0;
+}
+
+.nav.active a.current,
+.nav.active a:hover {
+  color: #710000;
+  font-weight: bold;
+}
+
+/* Main Area */
+.hero {
+  background-image: url(/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+  z-index: -2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: -20px 0 20px;
+  color: #ffc145;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.content {
+  max-width: 1200px;
+}
+
+.content h2,
+.content h3 {
+  font-size: 150%;
+  margin: 10px 0;
+}
+
+.content p {
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
