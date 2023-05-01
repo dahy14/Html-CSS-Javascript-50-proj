@@ -30,6 +30,10 @@ small {
   color: rgb(255, 0, 247);
 }
 
+#times {
+  display: none;
+}
+
 .loveMe {
   height: 660px;
   width: 550px;
